@@ -1,0 +1,114 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    font-family:Edu VIC WA NT Beginner, sans-serif;
+}
+h1, h2, h3, h4 {
+    padding:20px;
+    margin:0;
+    height:2rem;
+}
+div, p {
+    padding:0;
+    margin:0;
+}
+
+#hero-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(main.jpg);
+    background-size: cover;
+    background-position: center;
+    height:400px;
+    padding: 0;
+    margin: 0;
+    color:blanchedalmond;
+    text-shadow: 0 0 8px black;
+}
+#hero-section:hover {
+    background-image: url(main.jpg);
+    opacity: 90%;
+}
+
+
+#activity-section {
+    display:flex;
+    flex-direction: column;
+    background-color:lightgrey;
+    padding:10px;
+}
+.activity-section-stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.activity-section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    width:250px;
+}
+.activity-img {
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    border:0 solid white;
+    border-radius:10px;
+    box-shadow: 1px 1px 5px black;
+    margin:5px;
+}
+@media only screen and (max-width: 600px){
+    .activity-section-stuff {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:250px;
+    }
+}
+#guide-section {
+    display: flex;
+    width: 450px;
+    background-color: lightblue;
+    margin: 20px auto;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 25px
+}
+@media only screen and (max-width: 500px){
+    #guide-section {
+        flex-direction: column;
+        width:250px;
+    }
+}
+#profile-img {
+    width:200px;
+    height:200px;
+    border: 0 solid black;
+    border-radius:10px;
+    box-shadow: 1px 1px 5px black;
+    margin:20px;
+}
+
+#guide-section-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
